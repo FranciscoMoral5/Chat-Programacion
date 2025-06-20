@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Universitario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    
+    <div class="main-container">
+        <!-- Panel de usuarios -->
+        <div class="users-panel" id="usersPanel">
+            <div class="users-header">
+                <h2>👥 Usuarios</h2>
+                <div class="online-count">
+                    <span class="online-indicator"></span>
+                    <span id="onlineCount">0 conectados</span>
+                </div>
+                <button class="toggle-users" id="toggleUsers">✕</button>
+            </div>
+            <div class="users-list" id="usersList">
+                <ul id="usuarios-conectados"></ul>
+            </div>
+        </div>
+
+        <!-- Container del chat -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <button class="mobile-toggle" id="mobileToggle">☰</button>
+                <h1>Chat Universitario <span class="connection-status" id="connectionStatus"></span></h1>
+            </div>
+                     
+            <div class="messages-container" id="messagesContainer">
+                <ul id="messages"></ul>
+            </div>
+              
+            <form id="form">
+                <div class="input-container">
+                    <div class="message-input-container">
+                        <input id="input" class="message-input" placeholder="Escribe tu mensaje..." rows="1">
+                                         
+                        <div class="input-buttons">
+                            <button type="button" class="btn btn-file" title="Subir imagen">
+                                📷
+                                <input type="file" class="file-input" id="fileInput" accept="image/*">
+                            </button>
+                            <button type="submit" class="btn btn-send" id="sendButton" title="Enviar mensaje">➤</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+  </body>  
+  <script src="/socket.io/socket.io.js">///esto te trae la funcion io() para usar</script>
+
+  <script src="script.js"></script>
+
+</html>
