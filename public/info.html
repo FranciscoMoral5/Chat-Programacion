@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Únete al Chat Universitario</title>
+    <link rel="stylesheet" href="info.css">
+</head>
+<body>
+    <!-- Elementos decorativos de fondo -->
+    <div class="bg-decoration"></div>
+    <div class="bg-decoration"></div>
+    <div class="bg-decoration"></div>
+
+    <div class="login-container">
+        <div class="logo-section">
+            <div class="logo">💬</div>
+        </div>
+
+        <div class="welcome-text">
+            <h1>¡Bienvenido!</h1>
+            <p>Únete a nuestro chat y conectate con otras personas</p>
+        </div>
+
+        <form class="form-container" id="loginForm">
+            <div class="input-group">
+                <label for="username">Tu nombre de usuario</label>
+                <input 
+                    type="text" 
+                    id="username" 
+                    class="input-field" 
+                    placeholder="Ingresa tu nombre..."
+                    minlength="2"
+                    maxlength="20"
+                    required
+                    autocomplete="off"
+                >
+            </div>
+
+            <button type="submit" class="join-button" id="joinButton">
+                🚀 Entrar al Chat
+            </button>
+        </form>
+
+        <div class="footer">
+            <p>Al entrar, aceptas nuestras normas de convivencia y respeto</p>
+        </div>
+    </div>
+
+    <script src="info.js"></script>
+</body>
+</html>
